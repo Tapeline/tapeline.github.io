@@ -4,13 +4,9 @@ layout: default
 
 <div class="posts">
   {% for post in site.posts %}
-    <article class="post">
+    <article class="post" style="background: #eee; border-radius: 10px; border: 1px solid #ccc; padding: 10px;">
 
-      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
-
-      <div class="entry">
-        {{ post.excerpt }}
-      </div>
+      <h1 style="margin-top: 10px;"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
 
       <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
     </article>
